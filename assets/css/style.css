@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kanit", sans-serif; }
+
+body {
+  background: rosybrown; }
+
+#dragList {
+  margin: 8px 0;
+  height: 100vh;
+  text-align: center; }
+
+#todo {
+  background-color: crimson;
+  color: #f4f4f4;
+  padding-bottom: 20px; }
+  #todo .task-input::placeholder {
+    color: crimson; }
+
+#doing {
+  background-color: darkgreen;
+  color: #f4f4f4;
+  padding-bottom: 20px; }
+  #doing .task-input::placeholder {
+    color: darkgreen; }
+
+#done {
+  background-color: chocolate;
+  color: #f4f4f4;
+  padding-bottom: 20px; }
+  #done .task-input::placeholder {
+    color: chocolate; }
+
+h2 {
+  margin: 20px 0; }
+
+.task {
+  padding: 8px;
+  margin: 16px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  cursor: grab; }
+  .task:active {
+    cursor: grabbing; }
+
+.container > div {
+  background-color: #f4f4f4;
+  letter-spacing: 0.1em; }
+
+.drag-active {
+  opacity: 0.5; }
+
+.task-todo {
+  transform: rotate(10deg); }
+
+.task-done {
+  transform: rotate(-10deg); }
+
+.task-input {
+  margin-bottom: 40px;
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  padding: 8px; }
